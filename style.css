@@ -45,45 +45,172 @@ a:link {
   .logo span {
     color: var(--color-primary);
   }
-  #nav {
-    width: 100%;
-    height: 70px;
-    line-height: 70px;
+ /* header CSS */
+#header {
+  background-color: var(--navbar-color);
+  position: relative;
+  height: 120px;
+  z-index: 100;
+  font-size: 70px;
+  /* border-bottom: rgb(85, 85, 85) 2px solid; */
+}
 
-    background: var(--navbar-color);
+#f1Logo {
+  height: 120px;
+}
+
+#headerText {
+  text-align: center;
+  line-height: 120px;
+  margin: 0;
+  color: white;
+}
+
+#headerButton {
+  right: 0;
+  top: 50%;
+  position: absolute;
+  cursor: pointer;
+  height: 40px;
+  margin-top: -20px;
+  border: none;
+  background-color: transparent;
+  color: #FFF;
+  margin-right: 50px;
+  font-family: Formula1Font;
+}
+
+#headerButton1 {
+  right: 200px;
+  top: 50%;
+  position: absolute;
+  cursor: pointer;
+  height: 40px;
+  margin-top: -20px;
+  border: none;
+  background-color: transparent;
+  color: #FFF;
+  margin-right: 50px;
+  font-family: Formula1Font;
+}
+
+.headerlink {
+  text-decoration: none;
+  color: white;
+}
+
+
+#headerButton #buttonInner {
+  position: relative;
+}
+
+#headerButton #buttonLine {
+  position: absolute;
+  width: 100%;
+  bottom: -52px;
+  height: 3px;
+  background-color: var(--color-primary);
+  display: none;
+  animation: lineHoverOff 0.75s ease;
+  animation-fill-mode: forwards;
+}
+
+#headerButton:hover #buttonLine {
+  display: block;
+  animation: lineHoverOn 0.75s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes lineHoverOn {
+  0% {
+      width: 0%;
   }
 
-  .logo-space {
-    width: 15%;
-    height: 70px;
-    float: left;
-    margin-left: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  100% {
+      width: 100%;
   }
+}
 
-  .pfp {
-    width: 20%;
-    height: auto;
-  }
+/* header css */
 
-  .list-space {
-    float: right;
-    right: 200px;
-    width: 40%;
-    height: 70px; 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  ul li {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* extra css voor lines */
+/* contact part */
+#headerButton1 {
+  right: 150px;
+  top: 50%;
+  position: absolute;
+  cursor: pointer;
+  height: 40px;
+  margin-top: -20px;
+  border: none;
+  background-color: transparent;
+  color: #FFF;
+  margin-right: 50px;
+  font-family: Formula1Font;
+}
 
-  }
+#headerButton1 #buttonInner1 {
+  position: relative;
+}
+
+#headerButton1 #buttonLine1 {
+  position: absolute;
+  width: 100%;
+  bottom: -52px;
+  height: 3px;
+  background-color: var(--color-primary);
+  display: none;
+  animation: lineHoverOff 0.75s ease;
+  animation-fill-mode: forwards;
+}
+
+#headerButton1:hover #buttonLine1 {
+  display: block;
+  animation: lineHoverOn 0.75s ease;
+  animation-fill-mode: forwards;
+}
+
+/* contact part */
+
+/* news part */
+#headerButton2 {
+  right: 300px;
+  top: 50%;
+  position: absolute;
+  cursor: pointer;
+  height: 40px;
+  margin-top: -20px;
+  border: none;
+  background-color: transparent;
+  color: #FFF;
+  margin-right: 50px;
+  font-family: Formula1Font;
+}
+
+#headerButton2 #buttonInner2 {
+  position: relative;
+}
+
+#headerButton2 #buttonLine2 {
+  position: absolute;
+  width: 100%;
+  bottom: -52px;
+  height: 3px;
+  background-color: var(--color-primary);
+  display: none;
+  animation: lineHoverOff 0.75s ease;
+  animation-fill-mode: forwards;
+}
+
+#headerButton2:hover #buttonLine2 {
+  display: block;
+  animation: lineHoverOn 0.75s ease;
+  animation-fill-mode: forwards;
+}
+
+/* news part */
+
+/* extra css voor lines */
   /* .menu-bar {
     background-color: var(--navbar-color);
     height: 80px;
