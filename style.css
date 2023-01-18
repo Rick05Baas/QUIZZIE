@@ -122,6 +122,8 @@ a:link {
     height: 35em;
     border: 1px solid var(--color-primary);
     border-radius: 20px;
+    text-align: center;
+    padding-top: 20px;
   }
 
   .container3{
@@ -130,4 +132,6 @@ a:link {
     height: 35em;
     border: 1px solid var(--color-primary);
     border-radius: 20px;
+    text-align: center;
+    padding-top: 20px;
   }
