@@ -13,86 +13,88 @@ let availableQuestions = []
 
 let questions = [
     {
-    question: 'When was the first Gran Turismo Released?',
-        choice1: '23 December 1995',
-        choice2: '4 march 1995',
-        choice3: '23 december 1997 ',
-        choice4: '4 march',
+        question: 'How long did the developer for Assetto Corsa?',
+        choice1: '5 years',
+        choice2: '8 year',
+        choice3: '3 years ',
+        choice4: '4 years',
         answer: 3,
     },
     {
-        question: 'Which one is right?',
-        choice1: 'First Polyphony Digital, Then Polys Entertainment',
-        choice2: 'First Polys Entertainment, Then Polyphony Digital ',
-        choice3: 'First Polies Entertain, Then polies Digital',
-        choice4: 'First Polys Digital, then Polyphony Digital',
+        question: 'Who developed Assetto Corsa?',
+        choice1: '505 Games',
+        choice2: 'Kunos Simulazioni ',
+        choice3: '505 Games and Kunos Simulazioni',
+        choice4: '505 Games and Kinus Simulazioni',
         answer: 2,
     },
     {
-        question: 'How many years does Gran Turismos series Exist?',
-        choice1: '26 years',
-        choice2: '24 years',
-        choice3: '29 years',
-        choice4: '23 years',
-        answer: 1,
+        question: 'When was announced that assetto corsa would come to PS4 and Xbox One?',
+        choice1: '26 Augustus 2016',
+        choice2: '23 June 2020',
+        choice3: 'Summer 2018',
+        choice4: '3 June 2015',
+        answer: 4,
     },
-    {
-        question: 'On what platform is Gran Turismo 7 Available?',
-        choice1: 'PC, PS4, PS5, Xbox, Nintendo Switch',
-        choice2: 'PS4',
-        choice3: 'PS4, P55',
-        choice4: 'PS4, PS5',
+   
+{
+        question: 'On what platform is Assetto Corsa Competizione  Available?',
+        choice1: 'PC, PS4, PS5, Xbox One, Nintendo Switch',
+        choice2: ' PS4, PS5, Xbox One, Xbox Series X/S, ',
+        choice3: ' PC, PS4, Xbox Series X/S, Xbox One',
+        choice4: ' PS4, PS5, Xbox One, PC, Xbox Series X/S',
         answer: 4,
     },
     {
-        question: 'In what category did Gran Turismo 7 won The Game Awards 2022?',
-        choice1: 'Best Game',
-        choice2: 'Best Racing Game',
-        choice3: 'Best Sport Racing Game',
-        choice4: 'Best Car Racing Game',
+        question: 'Where was announced that Assetto Corsa Competizione would come to PS5 and Xbox Series X/S?',
+        choice1: 'Gamescom',
+        choice2: 'Total 24 hours Spa 2021',
+        choice3: 'Esports',
+        choice4: 'Reveal PS5',
+        answer: 1,
+    },
+    {
+        question: 'Assetto Corsa released in the early access in 8 November 2013. When was the game official fully released?',
+        choice1: '29 May 2019',
+        choice2: '19 December 2014',
+        choice3: '1 January, 2014',
+        choice4: '29 May 2019',
+        answer: 2,
+    },
+    {
+        question: 'How many different Circuits are there?',
+        choice1: '11',
+        choice2: '36',
+        choice3: '22',
+        choice4: '43',
         answer: 3,
     },
     {
-        question: 'How many million times was Gran Turismo sold worldwide?',
-        choice1: '10,76',
-        choice2: '10,81',
-        choice3: '11',
-        choice4: '10,85',
-        answer: 4,
-    },
-    {
-        question: 'How many different Circuits (+ Different Layouts) are there?',
-        choice1: '35',
-        choice2: '25',
-        choice3: '50',
-        choice4: '60',
-        answer: 4,
-    },
-    {
-        question: 'Which Gran Turismo came out between Gran Turismo 6 and 7?',
-        choice1: 'Gran Turismo Streets',
-        choice2: 'Gran Turismo Sport',
-        choice3: 'Gran Turismo Between',
-        choice4: 'Gran Turismo Speed',
+        question: 'Assetto Corsa Stand For: ?',
+        choice1: 'Race Simulator',
+        choice2: 'Race Setup',
+        choice3: 'Drive Hard',
+        choice4: 'Escape Normal',
         answer: 2,
     },
     {
-        question: 'Who did produce Gran Turismo?',
-        choice1: 'Kazunori Yamauchi ',
-        choice2: 'Keng Akihiko',
-        choice3: 'Yeng Jijng Bi',
-        choice4: 'Ono Beijing Ye',
-        answer: 1,
+        question: 'Assetto Corsa was Originally For ?',
+        choice1: 'Xbox One ',
+        choice2: 'Ps4',
+        choice3: 'Xbox Series X/S',
+        choice4: 'PC',
+        answer: 4,
     },
     {
-        question: 'How many Miles are driven by the Gran Turismo Community in 2022?',
-        choice1: '25 Million',
-        choice2: '13 Million',
-        choice3: '25 Billion',
-        choice4: '13 Billion',
-        answer: 4,
+        question: '505 Games was ? for Assetto Corsa',
+        choice1: 'Publisher',
+        choice2: 'Developer',
+        choice3: 'Management',
+        choice4: 'Announcer',
+        answer: 1,
     }
 ]
+
 
 
 const SCORE_POINTS = 125
@@ -110,7 +112,7 @@ getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
 
-        return window.location.assign('/ajhbwduabsdjhbwhavsd/end/')
+        return window.location.assign('/quizzie/joost/end/')
     }
 
     questionCounter++

@@ -39,9 +39,9 @@ let questions = [
     {
         question: 'On what platform is Gran Turismo 7 Available?',
         choice1: 'PC, PS4, PS5, Xbox, Nintendo Switch',
-        choice2: 'PS4',
-        choice3: 'PS4, P55',
-        choice4: 'PS4, PS5',
+        choice2: 'PS4, Mobile',
+        choice3: 'PS3, PS6',
+        choice4: 'Playstion 4, Playstation 5',
         answer: 4,
     },
     {
@@ -110,7 +110,7 @@ getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
 
-        return window.location.assign('/ajhbwduabsdjhbwhavsd/end/')
+        return window.location.assign('/quizzie/lucas/end/')
     }
 
     questionCounter++

@@ -142,3 +142,58 @@ input::placeholder {
 #saveScoreBtn {
     border: none;
 }
+
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+    .container {
+        margin-top: -8rem;
+    }
+}
+
+#pageload {
+    z-index: 110;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    animation: pageloadIn 2s;
+    animation-fill-mode: forwards;
+    background-color: rgb(0, 0, 0);
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes pageloadIn {
+    0% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    99% {
+        opacity: 0.05;
+        z-index: 105;
+    }
+
+    100% {
+        opacity: 0;
+        z-index: -5;
+    }
+}
+
+.img2 {
+    position: absolute;
+    z-index: 10;
+    width: 220px;
+    margin-top: -120px;
+    border-radius: 20px;
+}

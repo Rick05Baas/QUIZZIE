@@ -13,86 +13,87 @@ let availableQuestions = []
 
 let questions = [
     {
-    question: 'When was the first Gran Turismo Released?',
-        choice1: '23 December 1995',
-        choice2: '4 march 1995',
-        choice3: '23 december 1997 ',
-        choice4: '4 march',
-        answer: 3,
-    },
-    {
-        question: 'Which one is right?',
-        choice1: 'First Polyphony Digital, Then Polys Entertainment',
-        choice2: 'First Polys Entertainment, Then Polyphony Digital ',
-        choice3: 'First Polies Entertain, Then polies Digital',
-        choice4: 'First Polys Digital, then Polyphony Digital',
-        answer: 2,
-    },
-    {
-        question: 'How many years does Gran Turismos series Exist?',
-        choice1: '26 years',
-        choice2: '24 years',
-        choice3: '29 years',
-        choice4: '23 years',
+        question: 'When was Forza Horizon Launched?',
+        choice1: '23 October 2012',
+        choice2: '28 September 2018',
+        choice3: '5 November 2021 ',
+        choice4: '4 march 2014',
         answer: 1,
     },
     {
-        question: 'On what platform is Gran Turismo 7 Available?',
-        choice1: 'PC, PS4, PS5, Xbox, Nintendo Switch',
-        choice2: 'PS4',
-        choice3: 'PS4, P55',
-        choice4: 'PS4, PS5',
-        answer: 4,
-    },
-    {
-        question: 'In what category did Gran Turismo 7 won The Game Awards 2022?',
-        choice1: 'Best Game',
-        choice2: 'Best Racing Game',
-        choice3: 'Best Sport Racing Game',
-        choice4: 'Best Car Racing Game',
+        question: 'By who was Forza Horizon Developed?',
+        choice1: 'Microsoft Studios',
+        choice2: 'Forza ',
+        choice3: 'Playground Games',
+        choice4: 'Steve Jobs',
         answer: 3,
     },
     {
-        question: 'How many million times was Gran Turismo sold worldwide?',
-        choice1: '10,76',
-        choice2: '10,81',
-        choice3: '11',
-        choice4: '10,85',
+        question: 'Which instalment was Forza Horizon 5?',
+        choice1: '11th',
+        choice2: '14th',
+        choice3: '5th',
+        choice4: '12th',
         answer: 4,
     },
     {
-        question: 'How many different Circuits (+ Different Layouts) are there?',
-        choice1: '35',
-        choice2: '25',
-        choice3: '50',
-        choice4: '60',
+        question: 'In which year did Forza Horizon won The Game Awards?',
+        choice1: '2012',
+        choice2: '2017',
+        choice3: '2020',
+        choice4: '2021',
         answer: 4,
     },
     {
-        question: 'Which Gran Turismo came out between Gran Turismo 6 and 7?',
-        choice1: 'Gran Turismo Streets',
-        choice2: 'Gran Turismo Sport',
-        choice3: 'Gran Turismo Between',
-        choice4: 'Gran Turismo Speed',
+        question: 'Which choice starter cars can you choose in Forza Horizon ?',
+        choice1: 'Audi A2, Ford Focus',
+        choice2: 'Chevrolet C8 Corvette Stingray, Ford Bronco',
+        choice3: 'Audi A2 1.4, Volkswagen Jetta',
+        choice4: 'Willy MB Jeep, The Supervan III ',
         answer: 2,
     },
     {
-        question: 'Who did produce Gran Turismo?',
-        choice1: 'Kazunori Yamauchi ',
-        choice2: 'Keng Akihiko',
-        choice3: 'Yeng Jijng Bi',
-        choice4: 'Ono Beijing Ye',
+        question: 'Forza Horizon 5 was popular right after the launch how many times was the game played in the first week?',
+        choice1: '10 million',
+        choice2: '11 million',
+        choice3: '11,2 million',
+        choice4: '12 million',
         answer: 1,
     },
     {
-        question: 'How many Miles are driven by the Gran Turismo Community in 2022?',
-        choice1: '25 Million',
-        choice2: '13 Million',
-        choice3: '25 Billion',
-        choice4: '13 Billion',
+        question: 'Which track is the longest track on Forza Horizon 5?',
+        choice1: 'Suzuki Circuit',
+        choice2: 'Red Bull Ring',
+        choice3: 'Goliath',
+        choice4: 'Mountain Of Death',
+        answer: 3,
+    },
+    {
+        question: 'How many Forza Horizons are there?',
+        choice1: '12',
+        choice2: '7',
+        choice3: '6',
+        choice4: '5',
+        answer: 4,
+    },
+    {
+        question: 'Who did published Forza Horizon?',
+        choice1: 'Microsoft Studios ',
+        choice2: 'Playground Games ',
+        choice3: 'Forza',
+        choice4: 'Epic Games',
+        answer: 1,
+    },
+    {
+        question: 'When did Forza Horizon 3 Release?',
+        choice1: '30 September 2016',
+        choice2: '28 September 2016',
+        choice3: '4 November 2016',
+        choice4: '27 September 2016',
         answer: 4,
     }
 ]
+
 
 
 const SCORE_POINTS = 125
@@ -110,7 +111,7 @@ getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
 
-        return window.location.assign('/ajhbwduabsdjhbwhavsd/end/')
+        return window.location.assign('/quizzie/rick/end/')
     }
 
     questionCounter++
